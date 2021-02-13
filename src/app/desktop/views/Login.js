@@ -313,7 +313,7 @@ const Login = () => {
               <source src={backgroundVideo} type="video/webm" />
             </video>
           </Background>
-          <Loading transitionState={transitionState}>Loading...</Loading>
+          <Loading transitionState={transitionState}>Just Wait a Moment...</Loading>
         </Container>
       )}
     </Transition>

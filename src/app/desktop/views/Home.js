@@ -107,9 +107,9 @@ const Home = () => {
           <img
             src={`data:image/jpeg;base64,${profileImage}`}
             css={`
-              width: 15px;
+              width: 30px;
               cursor: pointer;
-              height: 15px;
+              height: 30px;
               margin-right: 10px;
             `}
             alt="profile"
