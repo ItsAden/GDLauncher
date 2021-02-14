@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
+/*  import React, { useState, useEffect, useRef, useContext } from 'react';
 import ContentLoader from 'react-content-loader';
 import styled, { ThemeContext } from 'styled-components';
 import { shell } from 'electron';
@@ -225,7 +225,7 @@ function News({ style, news }) {
       backgroundColor={ContextTheme.palette.grey[800]}
       title={false}
     >
-      {/* <rect x="0" y="0" rx="0" ry="0" width="1000" height="1080" /> */}
+    
       <rect width="20" height="180" />
       <rect x="980" width="20" height="180" />
       <rect
@@ -249,4 +249,4 @@ function News({ style, news }) {
   );
 }
 
-export default News;
+export default News; */

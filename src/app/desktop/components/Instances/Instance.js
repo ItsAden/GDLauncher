@@ -32,8 +32,8 @@ import { FABRIC, FORGE, VANILLA } from '../../../../common/utils/constants';
 
 const Container = styled.div`
   position: relative;
-  width: 180px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   transform: ${p =>
     p.isHovered && !p.installing
       ? 'scale3d(1.1, 1.1, 1.1)'

@@ -8,7 +8,7 @@ import { ipcRenderer } from 'electron';
 // import { promises as fs } from 'fs';
 // import path from 'path';
 import Instances from '../components/Instances';
-import News from '../components/News';
+// import News from '../components/News';
 import { openModal } from '../../../common/reducers/modals/actions';
 import {
   _getCurrentAccount
@@ -34,7 +34,7 @@ const AccountContainer = styled(Button)`
 const Home = () => {
   const dispatch = useDispatch();
   const account = useSelector(_getCurrentAccount);
-  const news = useSelector(state => state.news);
+  // const news = useSelector(state => state.news);
   const lastUpdateVersion = useSelector(state => state.app.lastUpdateVersion);
   // const instances = useSelector(_getInstances);
 
@@ -90,14 +90,12 @@ const Home = () => {
 
     init();
   }, []);
-
   useEffect(() => {
     extractFace(account.skin).then(setProfileImage).catch(console.error);
   }, [account]);
 
   return (
     <div>
-      <News news={news} />
       <Instances />
       <AddInstanceIcon type="primary" onClick={() => openAddInstanceModal(0)}>
         <FontAwesomeIcon icon={faPlus} />
